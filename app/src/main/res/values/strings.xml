@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SharkVPN</string>
+
+    <string name="default_config">默认配置</string>
+    <string name="add_config">添加配置</string>
+    <string name="del_config">删除选中配置</string>
+    <string name="new_config">新配置</string>
+    <string name="at_least_one_config">至少保留一个配置</string>
+
+    <string name="server_config">服务器配置</string>
+    <string name="profile_config">配置管理</string>
+    <string name="vpn_name">配置名</string>
+    <string name="server_addr">服务器地址</string>
+    <string name="server_port">服务器端口</string>
+    <string name="password">密码</string>
+    <string name="vpn_local_ip">VPN 内网 IP</string>
+    <string name="dns_addr">DNS 地址</string>
+    <string name="route_config">路由配置</string>
+    <string name="per_app">分应用代理</string>
+    <string name="app_list">应用列表</string>
+
+    <string name="loading">正在加载...</string>
+    <string name="select_all">全选</string>
+    <string name="select_invert">反选</string>
+</resources>

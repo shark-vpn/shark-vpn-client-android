@@ -1,0 +1,78 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <me.tt5397194.sharkcpp.preference.MyListPreference
+        android:key="config_list"
+        android:title="@string/profile_config"
+        android:dialogTitle="@string/profile_config"
+        android:defaultValue="3"/>
+    <PreferenceCategory android:title="@string/server_config">
+        <me.tt5397194.sharkcpp.preference.MyEditTextPreference
+            android:key="vpn_name"
+            android:title="@string/vpn_name"
+            android:defaultValue="vpn1"
+            android:selectAllOnFocus="true"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <me.tt5397194.sharkcpp.preference.MyEditTextPreference
+            android:key="server_addr"
+            android:title="@string/server_addr"
+            android:defaultValue="192.168.33.167"
+            android:selectAllOnFocus="true"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <me.tt5397194.sharkcpp.preference.MyEditTextPreference
+            android:key="server_port"
+            android:title="@string/server_port"
+            android:defaultValue="7194"
+            android:selectAllOnFocus="true"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <EditTextPreference
+            android:key="password"
+            android:title="@string/password"
+            android:summary="******"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <me.tt5397194.sharkcpp.preference.MyEditTextPreference
+            android:key="local_ip"
+            android:title="@string/vpn_local_ip"
+            android:defaultValue="192.168.194.1"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"/>
+        <me.tt5397194.sharkcpp.preference.MyEditTextPreference
+            android:key="dns_addr"
+            android:title="@string/dns_addr"
+            android:defaultValue="8.8.8.8"
+            android:selectAllOnFocus="true"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:maxLines="1"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/route_config">
+        <SwitchPreference android:key="pre_app"
+            android:title="@string/per_app"
+            android:defaultValue="false"/>
+        <Preference android:key="pre_app_lst"
+            android:dependency="pre_app"
+            android:title="@string/app_list"/>
+        <!--
+        <ListPreference android:key="warning_time"
+            android:title="@string/route_config"
+            android:summary="分应用代理s"
+            android:entries="@array/app_names"
+            android:entryValues="@array/pkg_names"
+            android:defaultValue="@string/server_config"
+            android:dialogTitle="分应用代理t"/>
+        -->
+        <Preference android:key="empty"
+            android:title=""/>
+    </PreferenceCategory>
+</PreferenceScreen>
