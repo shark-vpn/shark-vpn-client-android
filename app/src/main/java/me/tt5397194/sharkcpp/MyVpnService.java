@@ -67,6 +67,8 @@ public class MyVpnService extends VpnService {
     @Override
     public void onDestroy() {
         Log.e("zzz", "onDestroy");
+        MyVpnService.stopMyVPN();
+        MainActivity.SetEnabled(true);
         mThread.interrupt();
         super.onDestroy();
     }

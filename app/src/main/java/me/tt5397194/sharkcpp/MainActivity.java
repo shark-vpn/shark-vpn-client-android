@@ -70,13 +70,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (MyVpnService.mInterface == null) {
+                    Log.e("zzz", "startMyVPN = " + MyVpnService.mInterface);
                     Intent intent = VpnService.prepare(MainActivity.this);
                     if (intent != null) startActivityForResult(intent, 0);
                     else onActivityResult(0, RESULT_OK, null);
                 } else {
+                    Log.e("zzz", "stopMyVPN = " + MyVpnService.mInterface);
                     MyVpnService.stopMyVPN();
                     SetEnabled(true);
-                    Log.e("zzz", "stopMyVPN = " + MyVpnService.mInterface);
                 }
             }
         });
