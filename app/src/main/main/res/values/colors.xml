@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>      <!--AppBar-->
+    <color name="colorPrimaryDark">#303e9f</color>  <!--状态栏-->
+    <color name="colorAccent">#3f51b5</color>       <!--字体-->
+    <color name="OK">#4CAF50</color>                <!--OK-->
+    <color name="icon_bg">#488cff</color>
+</resources>
